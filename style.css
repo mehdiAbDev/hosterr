@@ -219,6 +219,9 @@ footer span .text:nth-child(2) {
     display: inline-block;
   }
   /* Adjust main content layout */
+  footer {
+    gap: 20px;
+  }
   main {
     flex-direction: column-reverse;
   }
