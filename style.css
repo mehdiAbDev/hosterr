@@ -228,7 +228,7 @@ footer span .text:nth-child(2) {
 }
 
 /* Media query for screens with a maximum width of 562px */
-@media (max-width: 562px) {
+@media (max-width: 590px) {
   /* Adjust 'hiring' button width */
   .imgs {
     scale: 0.6;
