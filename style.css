@@ -161,6 +161,10 @@ footer span .text:nth-child(2) {
   height: 50px;
   border: none;
   width: 150px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin: 10px 0;
+
 }
 
 /* Styling for the overlay element */
@@ -220,11 +224,15 @@ footer span .text:nth-child(2) {
 /* Media query for screens with a maximum width of 562px */
 @media (max-width: 562px) {
   /* Adjust 'hiring' button width */
+  .imgs {
+    scale: 0.6;
+  }
   .hiring {
     width: 80px;
   }
   /* Adjust footer layout */
   footer {
+    gap: 50px;
     flex-direction: column;
   }
 }
