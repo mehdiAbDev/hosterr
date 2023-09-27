@@ -208,6 +208,9 @@ footer span .text:nth-child(2) {
 /* Media query for screens with a maximum width of 1024px */
 @media (max-width: 1024px) {
   /* Hide navigation items */
+  .hiring {
+    width: 100px;
+  }
   .nav-item {
     display: none;
   }
@@ -228,7 +231,8 @@ footer span .text:nth-child(2) {
     scale: 0.6;
   }
   .hiring {
-    width: 80px;
+    width: 70px;
+    font-size: 14px;
   }
   /* Adjust footer layout */
   footer {
