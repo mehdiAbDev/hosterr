@@ -1,0 +1,230 @@
+/* Reset default outline on all elements */
+* {
+  outline: none;
+}
+
+/* Styling for the whole page */
+body {
+  overflow-x: hidden;
+  padding: 50px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styling for the main content section */
+main {
+  line-height: 2;
+  width: 70vw;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+/* Styling for main heading */
+main h1 {
+  line-height: 1;
+  font-size: 3em;
+}
+
+/* Styling for paragraphs in main content */
+main p {
+  color: gray;
+  font-family: Arial, Helvetica, sans-serif;
+  word-spacing: 5px;
+}
+
+/* Styling for elements with class 'no-spam' */
+.no-spam {
+  display: flex;
+  align-items: center;
+}
+
+/* Styling for the header section */
+header {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+/* Styling for the navigation list */
+#nav-list {
+  display: none;
+}
+
+/* Styling for elements with class 'hiring' */
+.hiring {
+  color: white;
+  border-radius: 30px;
+  padding: 10px;
+  background-image: linear-gradient(to right, rgb(122, 80, 40), pink);
+}
+
+/* Styling for navigation items */
+.nav-items,
+.nav-items-overlay {
+  gap: 1em;
+  display: flex;
+}
+
+/* Styling for individual navigation items */
+.nav-item {
+  font-family: sans-serif;
+  color: gray;
+}
+
+/* Styling for 'Join Waitlist' button */
+.join-waitlist {
+  height: 20px;
+  color: white;
+  background-color: steelblue;
+  padding: 2px 10px;
+  border-radius: 5px;
+  border: none;
+  margin: 0;
+  height: 50px;
+  width: 150px;
+}
+
+/* Styling for image containers */
+.imgs {
+  position: relative;
+}
+
+/* Styling for SVG elements within image containers */
+.imgs svg {
+  position: absolute;
+}
+
+/* Styling for specific SVG elements within image containers */
+.imgs svg:first-child {
+  rotate: -40deg;
+}
+
+.imgs svg:nth-child(2) {
+  rotate: -25deg;
+}
+
+.imgs svg:nth-child(3) {
+  rotate: -10deg;
+}
+
+/* Styling for images with 'photo' in the alt attribute */
+img[alt*="photo"] {
+  width: 387px;
+  height: 443px;
+  rotate: 0deg;
+}
+
+/* Styling for footer lists */
+footer ul {
+  display: flex;
+  color: gray;
+  gap: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Styling for the footer section */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Styling for text content */
+
+/* Styling for elements within the footer span */
+footer span {
+  gap: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+#talk {
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+}
+/* Styling for specific text elements within the footer span */
+footer span .text {
+  gap: 10px;
+}
+
+/* Styling for bold text within the footer span */
+footer span .text:nth-child(2) {
+  font-weight: bold;
+  /* color: red; */
+}
+
+/* Styling for form input elements */
+.form input {
+  height: 50px;
+  border: none;
+  width: 150px;
+}
+
+/* Styling for the overlay element */
+.overlay {
+  transition: top 0.3s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  z-index: 100;
+  background-image: linear-gradient(to top, rgb(122, 80, 40), pink);
+  height: fit-content;
+  text-align: center;
+  color: black;
+}
+
+/* Styling for the overlay list */
+.overlay ul {
+  display: flex;
+}
+
+/* Styling to hide the overlay element */
+.hidden {
+  top: -200px;
+}
+
+/* Styling for navigation items in the overlay */
+.nav-items-overlay {
+  color: white;
+  flex-direction: column;
+}
+
+/* Styling for individual navigation items in the overlay */
+.nav-item-overlay {
+  border-bottom: 2px solid white;
+  font-family: sans-serif;
+  color: white;
+}
+
+/* Media query for screens with a maximum width of 1024px */
+@media (max-width: 1024px) {
+  /* Hide navigation items */
+  .nav-item {
+    display: none;
+  }
+  /* Display navigation list */
+  #nav-list {
+    display: inline-block;
+  }
+  /* Adjust main content layout */
+  main {
+    flex-direction: column-reverse;
+  }
+}
+
+/* Media query for screens with a maximum width of 562px */
+@media (max-width: 562px) {
+  /* Adjust 'hiring' button width */
+  .hiring {
+    width: 80px;
+  }
+  /* Adjust footer layout */
+  footer {
+    flex-direction: column;
+  }
+}
