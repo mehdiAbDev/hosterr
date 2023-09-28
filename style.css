@@ -232,7 +232,7 @@ footer span .text:nth-child(2) {
 @media (max-width: 590px) {
   /* Adjust 'hiring' button width */
   .imgs {
-    scale: 0.6;
+    scale: 0.55;
   }
   .hiring {
     width: 70px;
