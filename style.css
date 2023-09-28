@@ -10,6 +10,7 @@ body {
   justify-content: center;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 /* Styling for the main content section */
