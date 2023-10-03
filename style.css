@@ -10,12 +10,10 @@ body {
   justify-content: center;
   display: flex;
   flex-direction: column;
-  overflow-x: hidden;
 }
 
 /* Styling for the main content section */
 main {
-  
   line-height: 2;
   width: 70vw;
   display: flex;
@@ -233,8 +231,7 @@ footer span .text:nth-child(2) {
 @media (max-width: 590px) {
   /* Adjust 'hiring' button width */
   .imgs {
-    scale: 0.5;
-    alig-self: left;
+    scale: 0.6;
   }
   .hiring {
     width: 70px;
